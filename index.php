@@ -1,10 +1,13 @@
 <?php 
-include './includes/head.inc'; 
+// include './includes/head.inc'; 
+session_start();
+include 'UI_include.php';
+include INC_DIR . 'header.inc';
 ?>
 
 <body>
     <div class='container'>
-        <?php include './includes/nav3.inc'; ?>
+        <?php include INC_DIR . 'menu.inc'; ?>
     </div>
     <main>
 
@@ -140,7 +143,7 @@ include './includes/head.inc';
   </div><!-- /.container -->
     </main>
     <?php
-    include './includes/foot.inc';
+    include INC_DIR . 'foot.inc';
     ?>
 </body>
 
