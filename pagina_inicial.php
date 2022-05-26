@@ -19,46 +19,49 @@ include INC_DIR . 'menu.inc'; ?>
 </div>
 <div class="carousel-inner">
 <div class="carousel-item active">
-<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" 
+focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
 
 <div class="container">
   <div class="carousel-caption text-start">
-    <h1>Example headline.</h1>
-    <p>Some representative placeholder content for the first slide of the carousel.</p>
+    <h1>Examplo de headline.</h1>
+    <p>Algum conteúdo de espaço reservado representativo para o primeiro slide do carrossel.</p>
     <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
   </div>
 </div>
 </div>
 <div class="carousel-item">
-<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" 
+focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
 
 <div class="container">
   <div class="carousel-caption">
-    <h1>Another example headline.</h1>
-    <p>Some representative placeholder content for the second slide of the carousel.</p>
-    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+    <h1>Outro exemplo headline.</h1>
+    <p>Algum conteúdo de espaço reservado representativo para o segundo slide do carrossel.</p>
+    <p><a class="btn btn-lg btn-primary" href="#">Saiba Mais</a></p>
   </div>
 </div>
 </div>
 <div class="carousel-item">
-<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" 
+focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
 
 <div class="container">
   <div class="carousel-caption text-end">
-    <h1>One more for good measure.</h1>
-    <p>Some representative placeholder content for the third slide of this carousel.</p>
-    <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+    <h1>Mais um para uma boa medida.</h1>
+    <p>Algum conteúdo de espaço reservado representativo para o terceiro slide deste carrossel.</p>
+    <p><a class="btn btn-lg btn-primary" href="#">Procurar galeria</a></p>
   </div>
 </div>
 </div>
 </div>
 <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Previous</span>
+<span class="visually-hidden">Anterior</span>
 </button>
 <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
+<span class="visually-hidden">Próximo</span>
 </button>
 </div>
 
@@ -72,24 +75,30 @@ include INC_DIR . 'menu.inc'; ?>
 <!-- Three columns of text below the carousel -->
 <div class="row">
 <div class="col-lg-4">
-<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" 
+aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" 
+fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
 <h2>Heading</h2>
-<p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+<p>Algum conteúdo de espaço reservado representativo para as três colunas de texto abaixo do carrossel. Esta é a primeira coluna.</p>
 <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
 </div><!-- /.col-lg-4 -->
 <div class="col-lg-4">
-<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" 
+aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" 
+fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
 <h2>Heading</h2>
-<p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+<p>Outro conteúdo de espaço reservado representativo. Desta vez, passamos para a segunda coluna.</p>
 <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
 </div><!-- /.col-lg-4 -->
 <div class="col-lg-4">
-<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+<svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" 
+aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" 
+fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
 
 <h2>Heading</h2>
-<p>And lastly this, the third column of representative placeholder content.</p>
+<p>E por último, a terceira coluna de conteúdo de espaço reservado representativo.</p>
 <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
 </div><!-- /.col-lg-4 -->
 </div><!-- /.row -->
@@ -101,11 +110,13 @@ include INC_DIR . 'menu.inc'; ?>
 
 <div class="row featurette">
 <div class="col-md-7">
-<h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-<p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+<h2 class="featurette-heading">Primeiro título featurette. <span class="text-muted">Vai explodir sua mente.</span></h2>
+<p class="lead">Alguns ótimos conteúdos de espaço reservado para o primeiro featurette aqui. Imagine uma prosa excitante aqui.</p>
 </div>
 <div class="col-md-5">
-<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" 
+xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" 
+focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
 
 </div>
 </div>
@@ -114,11 +125,14 @@ include INC_DIR . 'menu.inc'; ?>
 
 <div class="row featurette">
 <div class="col-md-7 order-md-2">
-<h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-<p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+<h2 class="featurette-heading">Sim, é tão bom. <span class="text-muted">Veja você mesmo.</span></h2>
+<p class="lead">Outro featurette? É claro. Mais conteúdo reservado aqui para lhe dar uma ideia de como esse layout funcionaria com algum conteúdo real no lugar.</p>
 </div>
 <div class="col-md-5 order-md-1">
-<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" 
+width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" 
+preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" 
+fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
 
 </div>
 </div>
@@ -127,11 +141,15 @@ include INC_DIR . 'menu.inc'; ?>
 
 <div class="row featurette">
 <div class="col-md-7">
-<h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-<p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+<h2 class="featurette-heading">E por último, este. <span class="text-muted">Xeque-mate.</span></h2>
+<p class="lead">E sim, este é o último bloco de conteúdo de espaço reservado representativo. Mais uma vez, 
+    não pretendo realmente ser lido, simplesmente aqui para dar-lhe uma melhor visão de como isso seria com algum conteúdo real. Seu conteúdo.</p>
 </div>
 <div class="col-md-5">
-<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" 
+width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" 
+preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" 
+fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
 
 </div>
 </div>
