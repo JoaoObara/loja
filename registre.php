@@ -106,7 +106,7 @@ $hoje = date('y-m-d H:i:s');
 
 // PARTE 5
 //Construir SQL Query para testar se usuario já existe
-include 'conecta_mysqli.inc';
+include INC_DIR . 'conecta_mysqli.inc';
 $resultado = mysqli_query($conexao, "SELECT * FROM usuarios where u_usuario='$novousuario'");
 $linhas = mysqli_num_rows($resultado);
 mysqli_close($conexao);
@@ -131,7 +131,7 @@ $query = "INSERT INTO usuarios
 // PARTE 6
 // Imprimir a query em tela para verificação
 echo ($query . '<br>');
-include 'conecta_mysqli.inc';
+include INC_DIR . 'conecta_mysqli.inc';
 $resultado = mysqli_query($conexao, $query);
 $linhasafetadas = mysqli_affected_rows($conexao);
 mysqli_close($conexao);

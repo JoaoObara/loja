@@ -41,7 +41,7 @@ echo 'CONTA CRIADA COM SUCESSO';
 <div class="formerror"><?php echo $msg; ?></div>
 <div class="form-group">
 <div>
-<center><button type="submit" name="submit" class="btn btn-primary btn-lg">Log 
+<center><button type="submit" name="submit" class="btn btn-primary btn-lg" action="pagina_inicial.php">Log 
 In</button></center>
 </div>
 </div>

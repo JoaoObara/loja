@@ -4,7 +4,8 @@ $usuario = $_POST["usuario"];
 $senha = $_POST["senha"];
 $senhaencriptada = md5($senha);
 // acesso ao banco de dados
-include "conecta_mysqli.inc";
+include "UI_include.php";
+include INC_DIR . 'conecta_mysqli.inc';
 $resultado = mysqli_query($conexao, "SELECT u_senha FROM usuarios where u_usuario='$usuario'");
 $linhas = mysqli_num_rows($resultado);
 if ($linhas == 0) // testa se a consulta retornou algum registro
