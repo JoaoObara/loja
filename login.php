@@ -1,27 +1,48 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" >
-    <title>Formulário de login</title>
-    <?php 
-include './includes/head.inc'; 
+<!-- PARTE 1 -->
+<?php
+session_start();
+include "UI_include.php";
+include INC_DIR . 'header.inc';
+$msg = "";
 ?>
-  </head>
-  <body>
-  
-  <div class='container'>
-        <?php include './includes/nav3.inc'; ?>
-    </div>
-    <div class='box'>
-    <div class='card'>
-    <form method="POST" action="validalog.php">
-      <p>Nome de usuário:<br /><input type="text" name="username" size="20" /></p>
-      <p>Senha:<br /> <input type="password" name="senha" size="20" /></p>
-      <p><input type="submit" value="Enviar" name="enviar" /></p>
-    </form>
-  </div></div>
-  </body>
-</html>
+<body>
+<div class="container">
+<?php
+include INC_DIR . 'menu.inc';
+?>
+<div class="form">
+<div class="new">
+<?php
+if (isset($_GET['new']))
+echo 'CONTA CRIADA COM SUCESSO';
+?>
+</div>
+
+
+
+<!-- PARTE 2 -->
+<div class="heading">
+<i class="material-icons">account_box</i>
+<h4 class="modal-title">Faça o login na sua conta</h4>
+</div>
+<form action="loginp.php" method="post" class="form-horizontal">
+<div class="form-group top"><i class="material-icons">face</i>
+<label class="control-label">Usuário</label>
+<div>
+<input type="text" class="form-control" name="usuario">
+</div>
+</div>
+<div class="form-group"><i class="material-icons">vpn_key</i>
+<label class="control-label">Senha</label>
+<div>
+<input type="password" class="form-control" name="senha">
+</div>
+</div>
+<div class="formerror"><?php echo $msg; ?></div>
+<div class="form-group">
+<div>
+<center><button type="submit" name="submit" class="btn btn-primary btn-lg">Log 
+In</button></center>
+</div>
+</div>
+</form>
