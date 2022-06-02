@@ -13,9 +13,13 @@ body {
 }
 
 /* footer */
-.conffuter {
-    background-color: gray;
+.conffoter {
+    background-color: rgba(128, 128, 128, 0.694);
+    color: white;
+    text-decoration: none;
+    font-size: small;
 }
+
 
 
 /*CSS code for index.php, signup.php, admin.php*/
