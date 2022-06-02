@@ -8,7 +8,7 @@ include ASSET_DIR . "images/logo_kingdom_horiz.svg"; ?></svg>
 </a>
 <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
 <li><a href="pagina_inicial.php" class="nav-link px-2 link-secondary">Home</a></li>
-<li><a href="#" class="nav-link px-2 link-dark">Pesquisar</a></li>
+<li><a href="estoque.php" class="nav-link px-2 link-dark">Estoque</a></li>
 <li><a href="#" class="nav-link px-2 link-dark">Relatórios</a></li>
 <li><a href="admin.php" class="nav-link px-2 link-dark">Admin</a></li>
 </ul>
