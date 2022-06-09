@@ -4,11 +4,36 @@ include INC_DIR . "valida_sessao.inc";
 include INC_DIR . 'header.inc';
 ?>
 
-<!-- PARTE 1 -->
 
 <body>
     <div class="container">
         <?php include INC_DIR . 'menu.inc'; ?>
+
+        <?php 
+        if (isset($_GET['incsucesso'])) : 
+            echo "<div class='alert alert-success' role='alert'>";
+            echo "NOVO CARRO INCLUÍDO COM SUCESSO";
+            echo "</div>";
+        endif;
+
+        if (isset($_GET['altsucesso'])) : 
+            echo "<div class='alert alert-success' role='alert'>";
+            echo "CARRO ALTERADO COM SUCESSO";
+            echo "</div>";
+        endif;
+
+        if (isset($_GET['delsucesso'])) : 
+            echo "<div class='alert alert-success' role='alert'>";
+            echo "CARRO EXCLUÍDO COM SUCESSO";
+            echo "</div>";
+        endif;
+
+        if (isset($_GET['erro'])) : 
+            echo "<div class='alert alert-danger' role='alert'>";
+            echo "ERRO DETECTADO";
+            echo "</div>";
+        endif;
+            ?>
     </div>
 
     <h3 style="text-align: center;">Estoque de carros</h3>
@@ -21,8 +46,8 @@ include INC_DIR . 'header.inc';
                 <th>Mod/Fab</th>
                 <th>Cor</th>
                 <th>Placa</th>
-                <th>Preço</th>
-                <th>Ações</th>
+                <th class="text-right">Preço</th>
+                <th class="text-right">Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -54,6 +79,33 @@ marcas.id_marca ORDER BY carros.marca ASC, carros.modelo ASC,carros.mod_fab ASC;
                             <button type="button" rel="tooltip" class="btn-sm btn-danger">
                                 <i class="material-icons">close</i>
                             </button></a>
+                    <!-- MODAL -->
+                    <div class="modal fade" id="exampleModal<?php echo $dados['id_carro']; ?>" tabindex="-1"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Tem certeza que quer excluir esse carro?</h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><?php echo $dados['desc_marca']; ?> - <?php echo $dados['modelo']; ?> - <?php echo $dados['descricao']; ?>
+                                - <?php echo $dados['mod_fab']; ?> - <?php echo $dados['cor']; ?> - <?php echo $dados['placa']; ?></p>
+                            </div>
+                        <div class="modal-footer">
+                            <form action="php_action/delete.php" method="POST">
+                                <input type="hidden" name="id" value="<?php echo $dados['id_carro']; ?>">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não excluir</button>
+                                <button type="submit" name="btn-deletar" class="btn btn-primary">Confirmar exclusão</button>
+                            </form>
+
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- FIM MODAL -->
+
                     </td>
                 </tr>
             <?php endwhile; ?>

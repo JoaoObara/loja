@@ -21,7 +21,7 @@ if (isset($_POST['btn-adicionar'])) :
 
     if ($linhasafetadas == 1) :
         mysqli_close($conexao);
-        echo "<script> location.replace('../estoque.php?incsucesso'; </script>)";
+        echo "<script> location.replace('../estoque.php?incsucesso'); </script>";
     
     else : 
         mysqli_close($conexao);
