@@ -23,7 +23,7 @@ if (isset($_POST['btn-alterar'])) :
         mysqli_close($conexao);
         echo "<script> location.replace('../estoque.php?altsucesso'); </script>";
         else :
-        // echo "<script> location.replace('../estoque.php?erro'); </script>";
+        echo "<script> location.replace('../estoque.php?erro'); </script>";
         endif;
     endif;
 ?>
