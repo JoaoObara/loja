@@ -8,8 +8,8 @@ include INC_DIR . 'header.inc';
 <body>
   <div class='container'>
     <?php include INC_DIR . 'menu.inc'; ?>
-  </div>
 
+    
   <main>
     <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -53,11 +53,74 @@ include INC_DIR . 'header.inc';
               <p>
                 Aproveite as taxas de 0,4% ao mês
               </p>
+              <p>
+                <a class="btn btn-lg btn-primary" href="registre-se.php">Registre-se</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http:www.w3.org/2000/svg"
+          aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+          <img src="./assets/images/slide3_verde.png">
+          <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Liberdade sem limites.</h1>
+              <p>
+                Viva aventuras incríveis.
+              </p>
+              <p>
+                <a class="btn btn-lg btn-primary" href="login.php">Saiba mais </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http:www.w3.org/2000/svg"
+          aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+          <img src="./assets/images/slide4_amarelo.png">
+          <rect width="100%" height="100%" fill="#777" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Seu novo carro!</h1>
+              <p>
+                Condições de pagamento como você nunca viu.
+              </p>
+              <p>
+                <a class="btn btn-lg btn-primary" href="login.php">Saiba mais</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+</div>
+
   </main>
 
   <?php
   include INC_DIR . 'foot.inc';
   ?>
+  </div>
 </body>
 
 </html>

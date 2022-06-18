@@ -12,6 +12,7 @@ href="https://fonts.googleapis.com/icon?family=Material+Icons"
 rel="stylesheet"
 />
 <link rel="stylesheet" href="includes/css/style.css" type="text/css" />
+<link rel="stylesheet" href="includes/css/carousel.css" type="text/css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
 </head>
