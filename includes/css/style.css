@@ -196,3 +196,20 @@ body {
 .material-icons {
     font-size: 1em;
 }
+
+
+/* Imagens redondas dos usuários */
+.circle {
+    background-color: #aaa;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.circle img {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+}

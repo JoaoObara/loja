@@ -29,7 +29,7 @@ if ($linhas == 0) // testa se a consulta retornou algum registro
         echo "<p><a href=\"login.php\">Voltar</a></p>";
         echo "</body></html>"; */
         mysqli_close($conexao);
-        echo "<script> location.replace('login.php?erro');</script>";
+        echo "<script> location.replace('login.php?erro'); </script>";
     } else // usuário e senha corretos. Vamos criar as variáveis da sessão
     {
         session_start();
