@@ -21,8 +21,8 @@ $avatar = $_SESSION['avatar']?>
     </ul>
 <div class="col-md-3 text-end">
     <a href="#" class="col-md-3 text-end">
-    <button type="button" class="btn btn-primary"><img class="circle" width="30" heigth="30" src="./
-    assets/images/usuarios/<?php echo $avatar; ?>"><?php print " " . "$usuario"; ?></button></a>
+    <button type="button" class="btn btn-primary"><img class="circle" width="30" heigth="30" src="./assets/images/usuarios/<?php echo $avatar; ?>">
+    <?php print " " . "$usuario"; ?></button></a>
     <a href="logout.php">
     <button type="button" class="btn btn-outline-primary me-2">Sair</button></a>
 </div>

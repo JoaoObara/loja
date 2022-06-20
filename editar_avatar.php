@@ -10,7 +10,7 @@ include INC_DIR . 'header.inc';
     include INC_DIR . 'menu.inc';
     //Select
     if (isset($_GET['id'])) :
-      include "conecta_mysqli.inc";
+      include INC_DIR . "conecta_mysqli.inc";
       $id = mysqli_escape_string($conexao, $_GET['id']);
       $sql = "SELECT * FROM usuarios WHERE u_usuario = '$id'";
       $resultado = mysqli_query($conexao, $sql);
@@ -42,7 +42,7 @@ include INC_DIR . 'header.inc';
               <input type="hidden" name="usuario" value="<?php echo $u_usuario; ?>">
               <legend><?php echo "$u_usuario" ?></legend>
 
-              <img class="img-responsive" width="200px" src="./assets/imagens/usuarios/<?php echo "$u_avatar" ?>" />
+              <img class="img-responsive" width="200px" src="./assets/images/usuarios/<?php echo "$u_avatar" ?>" />
               <p></p>
               <input name="arquivo" type="file" class="form-control" id="arquivofoto" value="<?php echo "$u_avatar" ?>" />
 

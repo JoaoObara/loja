@@ -12,7 +12,7 @@ if (isset($_POST['btn-alterar-foto'])) :
 
   // parte referente ao upload da imagem 
 
-  $_UP['pasta'] = '../assets/imagens/carros/';
+  $_UP['pasta'] = '../assets/images/carros/';
   // Tamanho máximo do arquivo (em Bytes)
   $_UP['tamanho'] = 1024 * 1024 * 6; // 2Mb
   // Array com as extensões permitidas
