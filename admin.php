@@ -95,7 +95,7 @@ include INC_DIR . 'header.inc';
                         <i class="material-icons">edit</i>
                         </button></a>
                         <a href="#modal<?php echo $dados['u_usuario']; ?>">
-                          <button alt="excluir" type="button" rel="tooltip" class="btn-sn btn-danger" data-bs-toggle="modal"
+                          <button alt="excluir" type="button" rel="tooltip" class="btn-sm btn-danger" data-bs-toggle="modal"
                           data-bs-target="#exampleModal<?php echo $dados['u_usuario']; ?>">
                           <i class="material-icons">close</i>
                           </button></a>
