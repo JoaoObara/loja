@@ -79,6 +79,7 @@ include INC_DIR . 'header.inc';
                         <td><?php echo $dados['u_usuario']; ?></td>
                         <td><?php echo $dados['u_nome']; ?></td>
                         <td><?php echo $dados['u_sobrenome']; ?></td>
+                        <td><?php echo $dados['u_email']; ?></td>
                         <td><?php echo $dados['u_cat']; ?></td>
                         <td><?php if ($dados['u_cat'] == "a"): echo "administrador"; 
                         endif;
@@ -91,9 +92,48 @@ include INC_DIR . 'header.inc';
                         </button></a>
                         <a href="editar_usuario.php?id<?php echo $dados['u_usuario']; ?>"><button alt="editar" type="button" 
                         rel="tooltip" class="btn-sm btn-success">
-                        <i class="material-icons">person</i>
+                        <i class="material-icons">edit</i>
                         </button></a>
+                        <a href="#modal<?php echo $dados['u_usuario']; ?>">
+                          <button alt="excluir" type="button" rel="tooltip" class="btn-sn btn-danger" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal<?php echo $dados['u_usuario']; ?>">
+                          <i class="material-icons">close</i>
+                          </button></a>
+                                                  <!-- MODAL -->
+                        <div class="modal fade" id="exampleModal<?php echo $dados['u_usuario']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Tem certeza que quer excluir esse usuario?</h5>
+
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><?php echo $dados['u_usuario']; ?> - <?php echo $dados['u_nome']; ?> - <?php echo $dados['u_sobrenome']; ?></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <form action="php_action/delete_user.php" method="POST">
+                                            <input type="hidden" name="usuario" value="<?php echo $dados['u_usuario']; ?>">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não excluir</button>
+                                            <button type="submit" name="btn-deletar-usuario" class="btn btn-primary">Confirmar exclusão</button>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIM MODAL -->
                     </td>    
                 </tr>
+                <?php endwhile; ?>
             </tbody>
         </table>
+    </div>
+    <br /><br />
+    <?php 
+      include INC_DIR . 'foot.inc';
+    ?>
+    </div>  
+</body>
+
+</html>

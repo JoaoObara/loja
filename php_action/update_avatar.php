@@ -1,8 +1,10 @@
-<?php
-// Sessão
+<?php //Sessao
 session_start();
-//Conexão
-include "../conecta_mysqli.inc";
+
+//Conexao
+
+include '../UI_include.php';
+include INC_DIR ."/conecta_mysqli.inc";
 
 if (isset($_POST['btn-alterar-avatar'])) :
 
@@ -10,7 +12,7 @@ if (isset($_POST['btn-alterar-avatar'])) :
   $u_usuario = $_POST['usuario'];
 
   // parte referente ao upload da imagem 
-  $_UP['pasta'] = '../assets/imagens/usuarios/';
+  $_UP['pasta'] = '../assets/images/usuarios/';
   // Tamanho máximo do arquivo (em Bytes)
   $_UP['tamanho'] = 1024 * 1024 * 6; // 2Mb
   // Array com as extensões permitidas

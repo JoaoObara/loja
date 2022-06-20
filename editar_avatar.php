@@ -1,6 +1,6 @@
 <?php
-include "valida_sessao.inc";
-include "UI_include.php";
+include 'UI_include.php';
+include INC_DIR . "valida_sessao.inc";
 include INC_DIR . 'header.inc';
 ?>
 

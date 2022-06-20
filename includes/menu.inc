@@ -1,7 +1,7 @@
 <?php if (isset($_SESSION['usuario'])) {
 $usuario = $_SESSION['usuario'];
 $categoria = $_SESSION['categoria'];
-$avatar = $_SESSION['avatar']?>]
+$avatar = $_SESSION['avatar']?>
 
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
         <a href="pagina_inicial.php" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark
@@ -16,7 +16,7 @@ $avatar = $_SESSION['avatar']?>]
 <li><a href="adicionar.php" class="nav-link px-2 link-dark">Adicionar</a></li>
 
         <?php if($categoria=='a') : ?>
-        <li><href="admin.php" class="nav-link px-2 link-dark">Admin</a></li>
+        <li><a href="admin.php" class="nav-link px-2 link-dark">Admin</a></li>
         <?php endif; ?>
     </ul>
 <div class="col-md-3 text-end">
