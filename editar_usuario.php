@@ -12,7 +12,7 @@ include INC_DIR . 'header.inc';
             include INC_DIR . "conecta_mysqli.inc";
             $id = mysqli_escape_string($conexao, $_GET['id']);
             $sql = "SELECT * FROM usuarios WHERE u_usuario = '$id'";
-            $resultado = mysqli_query($resultado, $sql);
+            $resultado = mysqli_query($conexao, $sql);
             $dados = mysqli_fetch_array($resultado);
         endif;
             //Recuperar dados em variaveis
@@ -68,7 +68,7 @@ include INC_DIR . 'header.inc';
 
                     </div>
                     <div style="text-align: center;" class="mt-3">
-                        <button type="submit" name="btn-alterar" class="btn btn-primary">Salvar alterações</button>
+                        <button type="submit" name="btn-alterar-usuario" class="btn btn-primary">Salvar alterações</button>
                     </div>
 
 

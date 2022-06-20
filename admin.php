@@ -86,11 +86,11 @@ include INC_DIR . 'header.inc';
                         if ($dados['u_cat'] == "u") : echo "usuário";
                     endif; ?> </td>
                     <td class="td-actions text-right">
-                        <a href="editar_avatar.php?id<?php echo $dados['u_usuario']; ?>"><button type="button" rel="tooltip"
+                        <a href="editar_avatar.php?id=<?php echo $dados['u_usuario']; ?>"><button type="button" rel="tooltip"
                         class="btn-sm btn-secondary">
                         <i class="material-icons">person</i>
                         </button></a>
-                        <a href="editar_usuario.php?id<?php echo $dados['u_usuario']; ?>"><button alt="editar" type="button" 
+                        <a href="editar_usuario.php?id=<?php echo $dados['u_usuario']; ?>"><button alt="editar" type="button" 
                         rel="tooltip" class="btn-sm btn-success">
                         <i class="material-icons">edit</i>
                         </button></a>
