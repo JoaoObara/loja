@@ -16,7 +16,7 @@ include INC_DIR . 'header.inc';
                     <div class="col-lg-6 col-md-8 mx-auto">
                         <h1 class="fw-light titprincipal">OFERTAS DO DIA</h1>
                         <p class="lead text-muted">
-                            Bem-vindos à Kingdom Multimarcas!
+                            Bem-vindos à Old Motors Multimarcas!
                         </p>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ include INC_DIR . 'header.inc';
                             <?php echo $dados['descricao']; ?> <br />
                             <?php echo $dados['cor']; ?> <?php echo $dados['placa']; ?> <br />
                             </p>
-                            <h3> <?php echo $dados['valor']; ?></h3>
+                            <h3> <?php echo "R$ " . $dados['valor']; ?></h3>
                             </p>
 
                         </div>

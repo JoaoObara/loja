@@ -4,8 +4,8 @@
     
     <p>
     <svg width="100px" height="70px" 
-    src=<?php include ASSET_DIR . "/images/logo_kingdom_horiz_invertido.svg"; ?> ></svg> 
-    &copy; 2022 Kingdom Ltda &middot; <a href="README.md">Terms</a>
+    src=<?php include ASSET_DIR . "/images/logo_oldmotors_horiz_invert.svg"; ?> ></svg> 
+    &copy; 2022 Old Motors Ltda &middot; <a href="README.md">Terms</a>
     </p>
   </footer>
 
