@@ -8,7 +8,7 @@ include INC_DIR . 'header.inc';
     <div class="container">
         <?php
         include INC_DIR . 'menu.inc'; ?>
-        <h3>Seja bem-vindo ao sistema!!!</h3>
+        <h3>Seja bem-vindo ao sistema para amantes de carros antigos</h3>
 
         <main>
             <section class="py-1 text-center container">
