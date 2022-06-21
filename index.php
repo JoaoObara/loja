@@ -24,12 +24,12 @@ include INC_DIR . 'header.inc';
         <div class="carousel-item active">
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" 
           aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <img src="./assets/images/slide1_azul.png">
+          <img src="./assets/images/carro-1.jpg">
           <rect width="100%" height="100%" fill="#777" /> 
           </svg>
 
           <div class="container">
-            <div class="carousel-caption text-start">
+            <div class="carousel-caption text-end">
               <h1>Seu sonho. Aqui.</h1>
               <p>
                 Seu carro dos sonhos é acessível.
@@ -43,7 +43,7 @@ include INC_DIR . 'header.inc';
         <div class="carousel-item">
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-          <img src="./assets/images/slide2_cinza.png">
+          <img src="./assets/images/carro-2.jpg">
           <rect width="100%" height="100%" fill="#777" />
           </svg>
 
@@ -64,13 +64,13 @@ include INC_DIR . 'header.inc';
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http:www.w3.org/2000/svg"
           aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
 
-          <img src="./assets/images/slide3_verde.png">
+          <img src="./assets/images/carro-3.jpeg">
           <rect width="100%" height="100%" fill="#777" />
           </svg>
 
           <div class="container">
             <div class="carousel-caption text-end">
-              <h1>Liberdade sem limites.</h1>
+              <h1>Aproveite!</h1>
               <p>
                 Viva aventuras incríveis.
               </p>
@@ -84,7 +84,7 @@ include INC_DIR . 'header.inc';
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http:www.w3.org/2000/svg"
           aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
 
-          <img src="./assets/images/slide4_amarelo.png">
+          <img src="./assets/images/carro-4.jpg">
           <rect width="100%" height="100%" fill="#777" />
           </svg>
 
