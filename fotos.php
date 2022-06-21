@@ -90,7 +90,7 @@ include INC_DIR . 'header.inc';
                 <input type="hidden" name="f_carro" value="<?php echo $id_carro; ?>">
                 <legend></legend>
 
-                <img class="img-responsive" width="300" src="./assets/images/carros/<?php echo "$f_image" ?>" />
+                <img class="img-responsive" width="300" src="./assets/images/carros/<?php echo "$f_imagem" ?>" />
                 <p></p>
 
 
@@ -99,7 +99,7 @@ include INC_DIR . 'header.inc';
                 <div class="btn-group">
                     <button type="submit" name="btn-alterar-foto" class="btn btn-sm btn-outline-secondary">Alterar imagem</button>
                     <?php if($f_destaque): ?>
-                        <button type="submit" name="btn btn-desmarcar-destaque" class="btn btn-sm btn-outline-secondary 
+                        <button type="submit" name="btn-desmarcar-destaque" class="btn btn-sm btn-outline-secondary 
                         <?php echo 'active'; ?>">Marcado como destaque</button>
                         <?php else : ?>
                             <button type="submit" name="btn-marcar-destaque" class="btn btn-sm btn-outline-secondary">

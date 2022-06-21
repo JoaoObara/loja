@@ -3,7 +3,8 @@
 session_start();
 
 //Conexão
-include "../conecta_mysqli.inc";
+include '../UI_include.php';
+include INC_DIR ."/conecta_mysqli.inc";
 
 if (isset($_POST['btn-incluir-foto'])) :
   $id_carro = $_POST['id_carro'];
