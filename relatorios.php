@@ -1,7 +1,6 @@
 <?php
-// include './includes/head.inc'; 
 session_start();
-include 'UI_include.php';
+include "UI_include.php";
 include INC_DIR . 'header.inc';
 ?>
 
@@ -16,7 +15,7 @@ include INC_DIR . 'header.inc';
         <div class="row row-cols-sm-1 row-cols-md-4 ">
 
         <div class="col mb-3">
-            <form action="php_actions/reports.php" target="_blank" method="POST">
+            <form action="php_action/reports.php" target="_blank" method="POST">
                 <div class="mb-3">
                     <h4>Por marca</h4>
                     <label for="marca" class="form-label">Selecione a marca</label>
@@ -34,7 +33,7 @@ include INC_DIR . 'header.inc';
                         mysqli_close($conexao); ?>
                     </select>
                 </div>
-                <div style="text-align: center;" class="mt-3">
+                <div class="mb-3">
                 <buttom type="submit" name="btn-relatorio" class="btn btn-primary">Gerar relatorio </buttom>
             </div>
             </form>
@@ -69,7 +68,7 @@ include INC_DIR . 'header.inc';
         <div class="col mb-3">
             <form action="php_action/reports.php" target="_blank" method="POST">
                 <div class="mb-3">
-                    <h4>Faixa de preço'</h4>
+                    <h4>Faixa de preço</h4>
                     <label for="preco" class="form-label">Preço mínimo</label>
                     <input type="text" class="form-control" id="preco" name="precomin">
                 </div>

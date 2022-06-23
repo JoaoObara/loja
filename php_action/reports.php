@@ -1,6 +1,6 @@
 <?php
 
-include 'UI_include.php';
+include "../UI_include.php";
 include INC_DIR . 'header.inc';
 include INC_DIR . 'conecta_mysqli.inc';
 ?>
@@ -38,7 +38,7 @@ include INC_DIR . 'conecta_mysqli.inc';
                     <tbody>
 
                     <?php  
-                        include INC_DIR . '../conecta_mysqli.inc';
+                        include INC_DIR . '/conecta_mysqli.inc';
                         $sql = "SELECT carros.id_carro, marcas.desc_marca, carros.modelo, carros.descricao, carros.mod_fab, carros.cor, carros.placa, 
                         carros.valor FROM marcas,carros WHERE carros.marca = marcas.id_marca AND carros.descricao LIKE '%$pesquisa%' ORDER BY carros.marca 
                         ASC, carros.modelo ASC, carros.mod_fab ASC;";
@@ -85,7 +85,7 @@ include INC_DIR . 'conecta_mysqli.inc';
                     <tbody>
 
                     <?php  
-                        include INC_DIR . '../conecta_mysqli.inc';
+                        include INC_DIR . '/conecta_mysqli.inc';
                         $sql = "SELECT carros.id_carro, marcas.desc_marca, carros.modelo, carros.descricao, carros.mod_fab, carros.cor, carros.placa, 
                         carros.valor FROM marcas,carros WHERE carros.marca = marcas.id_marca AND carros.mod_fab LIKE '%$pesquisaano%' ORDER BY carros.marca 
                         ASC, carros.modelo ASC, carros.mod_fab ASC;";
@@ -116,7 +116,7 @@ include INC_DIR . 'conecta_mysqli.inc';
                     $precomax = (int) $_POST['precomax'];
             ?>
                 <h3 style="text-align:center ;">Resultado da pesquisa</h3>
-                <h2 style="text-align:center ;"> Faixa de preço da pesquisa: <?php echo 'R$ ' . $precomin . 'a R$ ' . $precomax; ?></h2>
+                <h2 style="text-align:center ;"> Faixa de preço da pesquisa: <?php echo 'R$ ' . $precomin . ' a R$ ' . $precomax; ?></h2>
             
                 <table class="table">
                     <thead>
@@ -133,7 +133,7 @@ include INC_DIR . 'conecta_mysqli.inc';
                     <tbody>
 
                     <?php  
-                        include INC_DIR . '../conecta_mysqli.inc';
+                        include INC_DIR . '/conecta_mysqli.inc';
                         $sql = "SELECT carros.id_carro, marcas.desc_marca, carros.modelo, carros.descricao, carros.mod_fab, carros.cor, carros.placa, 
                         carros.valor FROM marcas,carros WHERE carros.marca = marcas.id_marca AND carros.valor >= $precomin AND carros.valor <= $precomax 
                         ORDER BY carros.valor ASC";
