@@ -31,8 +31,9 @@ include INC_DIR . 'header.inc';
         endif;
         ?>
         <h2>Fotos de carro:</h2>
-        <div>
-            <?php echo "<h5>$desc_marca $modelo $descricao $mod_fab $cor $placa $valor</h5>"; ?>
+        <div class="alert alert-dark" style="text-align: center;" role="alert">
+            <?php echo "<h5>$desc_marca | $modelo | $descricao | 
+            $mod_fab | $cor | $placa | R$ "; printf("%.2f", $valor); echo "</h5>"; ?>
         </div>
         <form action="php_action/include_foto.php" method="POST">
         <input type="hidden" name="id_carro" value="<?php echo $dados['id_carro']; ?>">

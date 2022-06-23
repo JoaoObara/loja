@@ -94,7 +94,7 @@ include INC_DIR . 'header.inc';
                     <td><?php echo $dados['mod_fab']; ?></td>
                     <td><?php echo $dados['cor']; ?></td>
                     <td><?php echo $dados['placa']; ?></td>
-                    <td><?php echo $dados['valor']; ?></td>
+                    <td><?php echo "R$ "; printf('%.2f', $dados['valor']); ?></td>
                     <td class="td-actions text-right">
                         <a href="fotos.php?id=<?php echo $dados['id_carro']; ?>">
                         <button type="button" rel="tooltip" class="btn-sm btn-secondary">

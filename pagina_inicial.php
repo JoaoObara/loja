@@ -44,7 +44,7 @@ include INC_DIR . 'header.inc';
                             <?php echo $dados['descricao']; ?> <br />
                             <?php echo $dados['cor']; ?> <?php echo $dados['placa']; ?> <br />
                             </p>
-                            <h3> <?php echo "R$ " . $dados['valor']; ?></h3>
+                            <h3> <?php echo "R$ "; printf('%.2f', $dados['valor']); ?></h3>
                             </p>
 
                         </div>
