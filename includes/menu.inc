@@ -14,6 +14,8 @@ $avatar = $_SESSION['avatar']?>
 <li><a href="pagina_inicial.php" class="nav-link px-2 link-secondary">Home</a></li>
 <li><a href="estoque.php" class="nav-link px-2 link-dark">Estoque</a></li>
 <li><a href="adicionar.php" class="nav-link px-2 link-dark">Adicionar</a></li>
+<li><a href="relatorios.php" class="nav-link px-2 link-dark">Relatórios</a></li>
+
 
         <?php if($categoria=='a') : ?>
         <li><a href="admin.php" class="nav-link px-2 link-dark">Admin</a></li>
@@ -36,13 +38,6 @@ $avatar = $_SESSION['avatar']?>
             text-decoration-none">
             <svg width="180px" src=<?php
                 include ASSET_DIR . "images/logo_oldmotors_horiz.svg"; ?></svg></a>
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="index.php" class="nav-link px-2 link-secondary">Home</a></li>
-                <li><a href="estoque.php" class="nav-link px-2 link-dark">Estoque</a></li>
-                <li><a href="adicionar.php" class="nav-link px-2 link-dark">Adicionar</a></li>
-
-
-            </ul>
             <div class="col-md-3 text-end">
                 <a href="login.php">
                     <button type="button" class="btn btn-outline-primary me-2">Entrar</button></a>
